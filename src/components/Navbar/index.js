@@ -1,10 +1,8 @@
-import { useState } from 'react';
 import './style.css';
 
-const Navbar = () => {
-  const [active, setActive] = useState(false);
+const Navbar = ({ active, setActive }) => {
   return (
-    <nav className="navbar">
+    <nav className={'navbar ' + (active && 'active')}>
       <div className="nav-left">
         <h1 className="nav-title">My Portfolio.</h1>
       </div>
