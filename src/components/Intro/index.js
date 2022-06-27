@@ -1,5 +1,6 @@
 import './style.css';
 import Batman from '../../assets/batman.png';
+import cv from '../../assets/bryan-f-cv.pdf';
 
 const Intro = () => {
   return (
@@ -7,7 +8,12 @@ const Intro = () => {
       <div className="left">
         <div className="left-wrapper">
           <h2 className="intro-text">Hello, world! My name is</h2>
-          <h1 className="intro-name">Bryan Flores</h1>
+          <h1 className="intro-name">
+            Bryan Flores
+            <a href={cv}>
+              <i class="fa-solid fa-file"></i>
+            </a>
+          </h1>
           <div className="slider">
             <div className="slider-item">Student</div>
             <div className="slider-item">Coder</div>

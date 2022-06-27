@@ -27,6 +27,20 @@
   font-size: 4em;
 }
 
+a {
+  text-decoration: none;
+  margin-left: 5%;
+}
+
+i {
+  color: rgb(147, 147, 147);
+  transition: transform 300ms ease;
+}
+
+i:hover {
+  transform: scale(1.05);
+}
+
 .slider {
   height: 2rem;
   overflow: hidden;
