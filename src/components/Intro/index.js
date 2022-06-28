@@ -1,6 +1,7 @@
 import './style.css';
 import Batman from '../../assets/batman.png';
 import cv from '../../assets/bryan-f-cv.pdf';
+import { AiOutlineFilePdf } from 'react-icons/ai';
 
 const Intro = () => {
   return (
@@ -11,7 +12,7 @@ const Intro = () => {
           <h1 className="intro-name">
             Bryan Flores
             <a href={cv}>
-              <i class="fa-solid fa-file"></i>
+              <AiOutlineFilePdf className="pdf" />
             </a>
           </h1>
           <div className="slider">
