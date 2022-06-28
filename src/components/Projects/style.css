@@ -3,10 +3,9 @@
 }
 
 .projects {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 4.5rem;
+  padding: 4.5rem 0;
 }
 
 .projects h1 {
