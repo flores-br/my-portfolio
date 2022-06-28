@@ -9,6 +9,9 @@ import {
   SiMysql,
 } from 'react-icons/si';
 
+import lolApp from './assets/lol-champions-img.png';
+import javafxApp from './assets/javafx-img.jpg';
+
 export const progIcons = {
   react: SiReact,
   express: SiExpress,
@@ -25,6 +28,7 @@ export const projectList = [
     title: 'League of Legends Champion Cards',
     description:
       'React web application for viewing League of Legends champions as well as their lore and stats in card format. Data was fetched from the official Riot Games API using Axios. Queries were handled using Express.js',
+    image: lolApp,
     tools: [
       progIcons.react,
       progIcons.express,
@@ -40,6 +44,7 @@ export const projectList = [
     title: 'Appointment Scheduler',
     description:
       'JavaFX application in which users can schedule and view appointments. The app was connected to a MySQL database using JDBC principles. Advanced Java concepts were also used such as the date/time API, streams, login and form validation.',
+    image: javafxApp,
     tools: [progIcons.java, progIcons.mysql],
     github: 'https://gitfront.io/r/bflor99/pXdx3GPEzygW/soft-ii-gitfront/',
   },
