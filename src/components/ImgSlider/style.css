@@ -9,22 +9,28 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 .img {
   width: 1500px;
   height: 700px;
-  box-shadow: 5px 5px 5px rgb(72, 72, 72);
+  box-shadow: 0 0 10px rgb(72, 72, 72);
   background-size: cover;
   position: relative;
 }
 
+.img:hover .info {
+  bottom: 0;
+}
+
 .info {
   position: absolute;
-  bottom: 0;
+  bottom: -50%;
   height: 25%;
   width: 100%;
   background: var(--main-color);
+  transition: all 500ms ease;
 }
 
 .info-wrapper {
