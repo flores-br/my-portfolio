@@ -13,14 +13,14 @@ import lolApp from './assets/lol-champions-img.png';
 import javafxApp from './assets/javafx-img.jpg';
 
 export const progIcons = {
-  react: SiReact,
-  express: SiExpress,
-  javascript: SiJavascript,
-  html: SiHtml5,
-  sass: SiSass,
-  css: SiCss3,
-  java: SiJava,
-  mysql: SiMysql,
+  react: { name: 'React', obj: <SiReact key={1} /> },
+  express: { name: 'Express.js', obj: <SiExpress key={2} /> },
+  javascript: { name: 'JavaScript', obj: <SiJavascript key={3} /> },
+  html: { name: 'HTML5', obj: <SiHtml5 key={4} /> },
+  sass: { name: 'Sass', obj: <SiSass key={5} /> },
+  css: { name: 'CSS', obj: <SiCss3 key={6} /> },
+  java: { name: 'Java', obj: <SiJava key={7} /> },
+  mysql: { name: 'MySQL', obj: <SiMysql key={8} /> },
 };
 
 export const projectList = [

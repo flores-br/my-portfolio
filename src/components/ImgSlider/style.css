@@ -1,3 +1,7 @@
+:root {
+  --main-color: #3aaed8;
+}
+
 .img-slider {
   position: relative;
   height: 70vh;
@@ -9,9 +13,101 @@
 
 .img {
   width: 1500px;
-  height: 70vh;
-  border-radius: 10px;
+  height: 700px;
+  box-shadow: 5px 5px 5px rgb(72, 72, 72);
   background-size: cover;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  background: var(--main-color);
+}
+
+.info-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.info-wrapper::after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  width: 5%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+
+.info-left,
+.info-right {
+  flex: 1;
+}
+
+.info-left {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-desc {
+  margin-left: 10%;
+}
+
+.info-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover .link-icon {
+  color: white;
+  transform: scale(1.1);
+}
+
+.i-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.i {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.i-title {
+  font-size: 0.2em;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  font-size: 2rem;
+  color: black;
+  margin: 0 0.5em;
+  transition: all 300ms ease;
 }
 
 .left-arrow {
@@ -21,7 +117,6 @@
   font-size: 3rem;
   color: black;
   cursor: pointer;
-  z-index: 10;
   user-select: none;
 }
 
@@ -32,17 +127,15 @@
   font-size: 3rem;
   color: black;
   cursor: pointer;
-  z-index: 10;
   user-select: none;
 }
 
 .slide {
-  opacity: 0;
-  transition-duration: 500ms ease;
+  transform: scale(0.98);
+  transition-duration: 700ms ease;
 }
 
 .slide.active {
-  opacity: 1;
-  transition-duration: 500ms;
-  transform: scale(1.05);
+  transition-duration: 700ms;
+  transform: scale(1);
 }
