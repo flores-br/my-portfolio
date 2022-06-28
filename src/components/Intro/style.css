@@ -86,7 +86,7 @@ i:hover {
   position: relative;
   width: 90%;
   height: auto;
-  animation: kickIn 1s ease-in-out forwards;
+  animation: kickIn 1s ease forwards;
   left: -200%;
   opacity: 0;
 }

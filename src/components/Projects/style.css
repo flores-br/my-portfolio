@@ -1,0 +1,44 @@
+:root {
+  --main-color: #3aaed8;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+}
+
+.projects h1 {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.projects h1::before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  height: 5px;
+  display: block;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--main-color);
+}
+
+.projects h1::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 1px;
+  display: block;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--main-color);
+}
