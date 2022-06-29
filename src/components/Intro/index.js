@@ -5,7 +5,7 @@ import { AiOutlineFilePdf } from 'react-icons/ai';
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className="left">
         <div className="left-wrapper">
           <h2 className="intro-text">Hello, world! My name is</h2>

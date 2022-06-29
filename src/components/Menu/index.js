@@ -4,9 +4,15 @@ const Menu = ({ active, setActive }) => {
   return (
     <div className={'menu ' + (active && 'active')}>
       <div className="menu-wrapper">
-        <div className="menu-item">Intro</div>
-        <div className="menu-item">Projects</div>
-        <div className="menu-item">Contact</div>
+        <a href="#intro" className="menu-item">
+          Intro
+        </a>
+        <a href="#projects" className="menu-item">
+          Projects
+        </a>
+        <a href="#contact" className="menu-item">
+          Contact
+        </a>
       </div>
     </div>
   );

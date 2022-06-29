@@ -29,7 +29,8 @@
 .menu-item {
   position: relative;
   padding: 3% 0;
-  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-item::before,
