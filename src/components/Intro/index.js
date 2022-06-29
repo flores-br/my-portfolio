@@ -11,7 +11,11 @@ const Intro = () => {
           <h2 className="intro-text">Hello, world! My name is</h2>
           <h1 className="intro-name">
             Bryan Flores
-            <a href="https://drive.google.com/file/d/1ykJ6ZVQHWoX2jwE-xPXaE2bpcfyb0dZl/view?usp=sharing">
+            <a
+              href="https://drive.google.com/file/d/1ykJ6ZVQHWoX2jwE-xPXaE2bpcfyb0dZl/view?usp=sharing"
+              target="blank"
+              rel="noreferrer"
+            >
               <AiOutlineFilePdf className="pdf" />
             </a>
           </h1>
