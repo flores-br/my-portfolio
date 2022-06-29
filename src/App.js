@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Contact from './components/Contact';
 import Intro from './components/Intro';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
@@ -12,6 +13,7 @@ const App = () => {
       <Menu active={active} setActive={setActive} />
       <Intro />
       <Projects />
+      <Contact />
     </>
   );
 };
