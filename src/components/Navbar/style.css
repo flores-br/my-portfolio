@@ -62,3 +62,13 @@
   transform-origin: left;
   transition: all 500ms ease;
 }
+
+@media (max-width: 40em) {
+  .nav-title {
+    display: none;
+  }
+
+  .hamburger {
+    margin-right: 1em;
+  }
+}
