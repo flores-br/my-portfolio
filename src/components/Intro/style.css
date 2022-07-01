@@ -20,7 +20,7 @@
 }
 
 .left-wrapper {
-  padding: 5em;
+  margin: 5em;
 }
 
 .intro-name {
@@ -84,7 +84,7 @@ a {
 
 .batman {
   position: relative;
-  width: 90%;
+  max-width: 100%;
   height: auto;
   animation: kickIn 1s ease forwards;
   left: -200%;
@@ -116,5 +116,32 @@ a {
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 40em) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .desc {
+    display: none;
+  }
+
+  .left-wrapper {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
