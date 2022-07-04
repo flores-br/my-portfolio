@@ -9,6 +9,7 @@ import {
   SiMysql,
 } from 'react-icons/si';
 
+import valCarousel from './assets/VALORANT-Carousel.png';
 import lolApp from './assets/lol-champions-img.png';
 import javafxApp from './assets/javafx-img.jpg';
 
@@ -24,6 +25,20 @@ export const progIcons = {
 };
 
 export const projectList = [
+  {
+    title: 'VALORANT Carousel',
+    description:
+      'React web application for viewing VALORANT agent data and their descriptions in a carousel. Data was fetched a 3rd party VALORANT API using Axios.',
+    image: valCarousel,
+    tools: [
+      progIcons.react,
+      progIcons.javascript,
+      progIcons.html,
+      progIcons.css,
+    ],
+    url: 'https://valorant-carousel.netlify.app/',
+    github: 'https://github.com/flores-br/valorant-carousel',
+  },
   {
     title: 'League of Legends Champion Cards',
     description:

@@ -14,8 +14,6 @@
 
 .img {
   max-width: 100%;
-  /* width: 1500px;
-  height: 700px; */
   width: min(70vw, 1500px);
   height: min(70vh, 700px);
   box-shadow: 0 0 10px rgb(72, 72, 72);
@@ -31,7 +29,7 @@
   position: absolute;
   bottom: -50%;
   height: 25%;
-  max-width: 100%;
+  width: 100%;
   background: var(--main-color);
   transition: all 500ms ease;
 }
